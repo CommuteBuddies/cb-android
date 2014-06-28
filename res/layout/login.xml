@@ -1,0 +1,92 @@
+<ScrollView 
+	android:id="@+id/ScrollView1" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:fillViewport="true"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout 
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        android:focusable="true" 
+        android:focusableInTouchMode="true"
+        >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/logo" 
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="@string/mobile_hint"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        
+         >
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/password_hint"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+         >
+    </EditText>
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="@string/forgot_pass" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        
+        >
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="login"
+            android:text="@string/login" />
+
+        <Button
+            android:id="@+id/sign_up_button"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:onClick="sign_up"
+            android:text="@string/sign_up" />
+
+    </LinearLayout>
+    
+</LinearLayout>
+</ScrollView>
